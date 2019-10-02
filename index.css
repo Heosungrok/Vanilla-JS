@@ -8,4 +8,5 @@ h1{
 
 .clicked{
     color:yellow;
+    transition: color 0.5s ease-out;
 }

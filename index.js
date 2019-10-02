@@ -3,13 +3,7 @@ const title = document.querySelector("#title");
 const CLICKED_CLASS = "clicked";
 
 function handleClick(){
-    const currentClass = title.className;
-
-    if(currentClass !== CLICKED_CLASS){
-       title.className = CLICKED_CLASS;
-    } else{
-        title.className = "";
-    }
+    title.classList.toggle(CLICKED_CLASS); // title의 classlist에 CLICKED_CLASS가 있으면 add 아니면 remove
 }
 
 function init () {
