@@ -17,8 +17,18 @@ function handleClick() {
 function init () {
     title.style.color = BASE_COLOR;
     title.addEventListener("mouseenter", handleClick);
+    
 }
 init();
 
+function OffLineMsg(){
+    alert('The network connection has been lost.');
+}
 
- 
+function OnLineMsg(){
+    alert('The network connection has been connected.');
+}
+
+window.addEventListener('offline',OffLineMsg);
+window.addEventListener('online',OnLineMsg);
+
